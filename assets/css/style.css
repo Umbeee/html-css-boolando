@@ -12,7 +12,11 @@
 }
 header{
     background-color: rgb(255, 102, 0);
-
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 13;
 }
 
 .buttons{
@@ -48,6 +52,7 @@ i{
 }
 .foto{
     width: 100%;
+    display: block;
 }
 .sconti{
     text-decoration:line-through;
@@ -118,4 +123,15 @@ footer{
     justify-content: space-between;
     align-items:center;
     min-height: 100px;
+}
+
+.img-b{
+    display: none;
+}
+
+.foto-hov:hover .img-a{
+    display: none;
+}
+.foto-hov:hover .img-b{
+    display: block;
 }
